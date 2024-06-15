@@ -1,0 +1,28 @@
+.fighter-preview___root {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+}
+
+.fighter-preview___right {
+  align-items: flex-end;
+}
+
+.fighter-preview___left {
+  align-items: flex-start;
+}
+
+.fighter-preview___name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fighter-preview___health {
+  font-size: 16px;
+  color: #f00;
+}
+
+.fighter-preview___right img {
+  transform: scaleX(-1);
+}

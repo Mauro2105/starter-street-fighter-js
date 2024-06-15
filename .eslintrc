@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": ["airbnb", "prettier"],
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "arrow-body-style": 0,
+        "no-console": "off",
+        "no-underscore-dangle": 0,
+        "no-useless-catch": 0,
+        "no-use-before-define": 0,
+        "class-methods-use-this": 0,
+        "no-param-reassign": 0,
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^createElement$" }]
+    },
+    "ignorePatterns": ["node_modules", "dist"],
+    "overrides": [
+        {
+            "files": ["vite.config.js"],
+            "rules": {
+                "import/no-extraneous-dependencies": 0
+            }
+        }
+    ]
+}
